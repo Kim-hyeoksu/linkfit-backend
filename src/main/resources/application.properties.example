@@ -1,0 +1,30 @@
+# =================================
+# LinkFit Web Application Configuration
+# =================================
+# 이 파일을 application.properties 복사한 후 실제 값으로 변경하여 사용하세요.
+# ==================================
+
+# Application Configuration
+spring.application.name=linkfit-web
+
+# PostgreSQL Database Configuration
+spring.datasource.url=jdbc:postgresql://localhost:5432/linkfit_db
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+# JPA/Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.format_sql=true
+
+# Server Configuration
+server.port=8080
+
+# =================================
+# 개발 환경 설정 방법
+# 1. PostgreSQL 설치 및 실행
+# 2. linkfit_db 데이터베이스 생성
+# 3. 사용자 계정 생성 후 위 정보 수정
+# =================================
