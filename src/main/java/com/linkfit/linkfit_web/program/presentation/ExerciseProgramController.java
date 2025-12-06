@@ -37,7 +37,7 @@ public class ExerciseProgramController {
 
     @GetMapping("/popular")
     public ResponseEntity<Page<ExerciseProgramResponse>> getPopularPrograms(
-            @PageableDefault(sort = "popularityScore", direction = Sort.Direction.DESC) Pageable pageable) {
+            @PageableDefault(sort = "likeCount", direction = Sort.Direction.DESC) Pageable pageable) {
         return ResponseEntity.ok(exerciseProgramService.getPopularPrograms(pageable));
     }
 
